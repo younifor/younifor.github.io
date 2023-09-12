@@ -1,232 +1,139 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>hexo使用文档 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="hexo博客搭建：https:&#x2F;&#x2F;blog.csdn.net&#x2F;thesat&#x2F;article&#x2F;details&#x2F;122657537?ops_request_misc&#x3D;&amp;request_id&#x3D;&amp;biz_id&#x3D;102&amp;utm_term&#x3D;hexoblog%E6%90%AD%E5%BB%BA&amp;utm_medium&#x3D;distribute.pc_search_result.none">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="hexo博客搭建：https:&#x2F;&#x2F;blog.csdn.net&#x2F;thesat&#x2F;article&#x2F;details&#x2F;122657537?ops_request_misc&#x3D;&amp;request_id&#x3D;&amp;biz_id&#x3D;102&amp;utm_term&#x3D;hexoblog%E6%90%AD%E5%BB%BA&amp;utm_medium&#x3D;distribute.pc_search_result.none">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo使用文档">
-<meta property="og:url" content="http://example.com/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://younifor.github.io/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/index.html">
+<meta property="og:site_name" content="younifor">
 <meta property="og:description" content="hexo博客搭建：https:&#x2F;&#x2F;blog.csdn.net&#x2F;thesat&#x2F;article&#x2F;details&#x2F;122657537?ops_request_misc&#x3D;&amp;request_id&#x3D;&amp;biz_id&#x3D;102&amp;utm_term&#x3D;hexoblog%E6%90%AD%E5%BB%BA&amp;utm_medium&#x3D;distribute.pc_search_result.none">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/images/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/image-20230912003404731.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://younifor.github.io/images/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/image-20230912003404731.png">
 <meta property="article:published_time" content="2023-09-11T12:55:31.000Z">
-<meta property="article:modified_time" content="2023-09-11T16:53:11.544Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2023-09-12T08:34:56.166Z">
+<meta property="article:author" content="younifor">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/image-20230912003404731.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<meta name="twitter:image" content="http://younifor.github.io/images/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/image-20230912003404731.png"><title>hexo使用文档 | younifor</title><link ref="canonical" href="http://younifor.github.io/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":false,"scrollDownIcon":true},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-hexo使用文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/" class="article-date">
-  <time class="dt-published" datetime="2023-09-11T12:55:31.000Z" itemprop="datePublished">2023-09-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      hexo使用文档
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><strong>hexo博客搭建：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/thesat/article/details/122657537?ops_request_misc=&request_id=&biz_id=102&utm_term=hexoblog%E6%90%AD%E5%BB%BA&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-122657537.nonecase&spm=1018.2226.3001.4187https://cn.bing.com/?mkt=zh-CN">https://blog.csdn.net/thesat/article/details/122657537?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexoblog%E6%90%AD%E5%BB%BA&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-122657537.nonecase&amp;spm=1018.2226.3001.4187https://cn.bing.com/?mkt=zh-CN</a></p>
-<p><strong>hexo基本知识：</strong><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">hexo使用文档</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2023-09-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2023-09-12</span></span></div></header><div class="post-body"><p><strong>hexo博客搭建：</strong><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://blog.csdn.net/thesat/article/details/122657537?ops_request_misc=&request_id=&biz_id=102&utm_term=hexoblog%E6%90%AD%E5%BB%BA&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-122657537.nonecase&spm=1018.2226.3001.4187https://cn.bing.com/?mkt=zh-CN" >https://blog.csdn.net/thesat/article/details/122657537?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexoblog%E6%90%AD%E5%BB%BA&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-122657537.nonecase&amp;spm=1018.2226.3001.4187https://cn.bing.com/?mkt=zh-CN</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p><strong>hexo基本知识：</strong><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup" >https://hexo.io/zh-cn/docs/setup</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <hr>
-<h3 id="基本使用："><a href="#基本使用：" class="headerlink" title="基本使用："></a>基本使用：</h3><h5 id="部署hexo网站："><a href="#部署hexo网站：" class="headerlink" title="部署hexo网站："></a>部署hexo网站：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
-<h5 id="本地开启网站预览："><a href="#本地开启网站预览：" class="headerlink" title="本地开启网站预览："></a>本地开启网站预览：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+        <h3 id="基本使用："   >
+          <a href="#基本使用：" class="heading-link"><i class="fas fa-link"></i></a><a href="#基本使用：" class="headerlink" title="基本使用："></a>基本使用：</h3>
+      
+        <h5 id="部署hexo网站："   >
+          <a href="#部署hexo网站：" class="heading-link"><i class="fas fa-link"></i></a><a href="#部署hexo网站：" class="headerlink" title="部署hexo网站："></a>部署hexo网站：</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></div></figure>
+
+
+        <h5 id="开启本地服务器："   >
+          <a href="#开启本地服务器：" class="heading-link"><i class="fas fa-link"></i></a><a href="#开启本地服务器：" class="headerlink" title="开启本地服务器："></a>开启本地服务器：</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></div></figure>
 
 <p><img src="/../images/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/image-20230912003404731.png" alt="image-20230912003404731"></p>
-<h5 id="发布到仓库："><a href="#发布到仓库：" class="headerlink" title="发布到仓库："></a>发布到仓库：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+        <h5 id="创建帖子"   >
+          <a href="#创建帖子" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建帖子" class="headerlink" title="创建帖子"></a>创建帖子</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;新帖子名称&quot;</span><br></pre></td></tr></table></div></figure>
 
 
+        <h5 id="清除缓存"   >
+          <a href="#清除缓存" class="heading-link"><i class="fas fa-link"></i></a><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br></pre></td></tr></table></div></figure>
 
 
+        <h5 id="生成静态文件"   >
+          <a href="#生成静态文件" class="heading-link"><i class="fas fa-link"></i></a><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></div></figure>
 
 
+        <h5 id="部署到远程仓库"   >
+          <a href="#部署到远程仓库" class="heading-link"><i class="fas fa-link"></i></a><a href="#部署到远程仓库" class="headerlink" title="部署到远程仓库"></a>部署到远程仓库</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></div></figure>
 
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/" data-id="clmf3rn9q00005cv25iabhber" data-title="hexo使用文档" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2023/09/12/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
-</article>
+        <h5 id="安装hexo主题"   >
+          <a href="#安装hexo主题" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装hexo主题" class="headerlink" title="安装hexo主题"></a>安装hexo主题</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/liuyib/hexo-theme-stun.git themes/stun</span><br></pre></td></tr></table></div></figure>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
-    </div>
-  </div>
+        <h5 id="安装依赖hexo-renderer-pug"   >
+          <a href="#安装依赖hexo-renderer-pug" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装依赖hexo-renderer-pug" class="headerlink" title="安装依赖hexo-renderer-pug"></a>安装依赖hexo-renderer-pug</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-renderer-pug</span><br></pre></td></tr></table></div></figure>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/09/12/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/">hexo使用文档</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+        <h5 id="启用主题"   >
+          <a href="#启用主题" class="heading-link"><i class="fas fa-link"></i></a><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h5>
+      <p>修改 Hexo 根目錄下的 _config.yml，把主題改為 stun</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: stun</span><br></pre></td></tr></table></div></figure>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+<p>清理缓存，启动hexo服务器</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo s</span><br></pre></td></tr></table></div></figure>
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+        <h5 id="更新"   >
+          <a href="#更新" class="heading-link"><i class="fas fa-link"></i></a><a href="#更新" class="headerlink" title="更新"></a>更新</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd themes/stun</span><br><span class="line"></span><br><span class="line">git pull</span><br></pre></td></tr></table></div></figure>
 
 
+        <h5 id="主题使用文档"   >
+          <a href="#主题使用文档" class="heading-link"><i class="fas fa-link"></i></a><a href="#主题使用文档" class="headerlink" title="主题使用文档"></a>主题使用文档</h5>
+      <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://theme-stun.github.io/docs/zh-CN/guide/quick-start.html#%E4%BD%BF%E7%94%A8</span><br></pre></td></tr></table></div></figure>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://younifor.github.io">younifor</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://younifor.github.io/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/">http://younifor.github.io/2023/09/11/hexo%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2023/09/12/hello-world/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">Hello World</span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="waline-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">
+          基本使用：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2hexo%E7%BD%91%E7%AB%99%EF%BC%9A"><span class="toc-number">1.0.1.</span> <span class="toc-text">
+          部署hexo网站：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9A"><span class="toc-number">1.0.2.</span> <span class="toc-text">
+          开启本地服务器：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%B8%96%E5%AD%90"><span class="toc-number">1.0.3.</span> <span class="toc-text">
+          创建帖子</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98"><span class="toc-number">1.0.4.</span> <span class="toc-text">
+          清除缓存</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="toc-number">1.0.5.</span> <span class="toc-text">
+          生成静态文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">1.0.6.</span> <span class="toc-text">
+          部署到远程仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo%E4%B8%BB%E9%A2%98"><span class="toc-number">1.0.7.</span> <span class="toc-text">
+          安装hexo主题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96hexo-renderer-pug"><span class="toc-number">1.0.8.</span> <span class="toc-text">
+          安装依赖hexo-renderer-pug</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%AF%E7%94%A8%E4%B8%BB%E9%A2%98"><span class="toc-number">1.0.9.</span> <span class="toc-text">
+          启用主题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0"><span class="toc-number">1.0.10.</span> <span class="toc-text">
+          更新</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3"><span class="toc-number">1.0.11.</span> <span class="toc-text">
+          主题使用文档</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/头像.png" alt="avatar"></div><p class="sidebar-ov-author__text">加油！</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div>已到底部</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://unpkg.com/@waline/client/dist/Waline.min.js"></script><script>function loadWaline () {
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var guest_info = 'nick,mail,link';
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+  guest_info = guest_info.split(',').filter(function(item) {
+    return GUEST_INFO.indexOf(item) > -1;
+  });
 
+  new Waline({
+    el: '#waline-container',
+    serverURL: '',
+    placeholder: 'Just go go',
+    pageSize: '10' || 10,
+    lang: '' || 'zh-cn',
+    visitor: false,
+    avatar: 'mp',
+    path: window.location.pathname,
+    meta: guest_info
+  });
+}
 
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+if (false) {
+  loadWaline();
+} else {
+  window.addEventListener('DOMContentLoaded', loadWaline, false);
+}</script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
